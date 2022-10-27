@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Sans&?family=Source+Serif+Pro&display=swap" rel="stylesheet" />
+    <!-- tailwind script here -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Alessia Amore</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="menu">
+      <nav class="flex flex-row justify-between items-center m-4 border-black border border-solid p-2 lg:mx-56">
+        <div class="logo">AA</div>
+        <ul class="flex flex-row justify-between items-center mx-4 gap-3">
+          <li><a class="p-2" href="#about">about</a></li>
+          <li><a class="p-2" href="#projects">projects</a></li>
+
+          <li><a class="p-2" href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="landing" class="h-fit">
+      <article class="flex flex-col sm:flex-row justify-around items-center p-5 py-20 h-full gap-5 xl:mx-56 lg:py-0">
+        <img src="http://placekitten.com/g/200/200" alt="placeholder" />
+        <div class="text-center sm:text-left">
+          <h1 class="text-3xl font-bold p-5 py-10 text-left leading-10 text-center sm:text-left sm:pb-5 sm:text-4xl md:text-5xl lg:leading-base"><em>Hello,</em><br />I am Alessia!</h1>
+          <p class="p-5 pt-0 text-center sm:text-left lg:text-base">A multimedia design student <br />with a strong interest in frontend design</p>
+          <p class="p-5 pt-3 pb-4 mb-4 text-center sm:text-left lg:py-0">Want me as an <em>intern?</em></p>
+          <a class="cta mx-5 p-3 self-center lg:text-lg" href="index.html#contact">Get in contact</a>
+        </div>
+      </article>
+    </div>
+    <section id="about" class="border-t border-black border-solid h-fit py-10">
+      <article>
+        <h2 class="text-center text-3xl pb-2 lg:pt-16">About</h2>
+        <article id="about_article" class="flex flex-col sm:flex-row justify-around items-left p-5 gap-12 pt-10 lg:gap-44 h-full sm:items-center xl:mx-56 lg:pt-20">
+          <img class="sm:rounded-full sm:ml-20" src="http://placekitten.com/g/250/250" alt="placeholder" />
+          <article class="flex flex-col p-5 sm:p-0 gap-6">
+            <span class="flex flex-row gap-3 h-fit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1)">
+                <path
+                  d="M11.42 21.815a1.004 1.004 0 0 0 1.16 0C12.884 21.598 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.996c-.029 6.444 7.116 11.602 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.004.021 4.438-4.388 8.423-6 9.731-1.611-1.308-6.021-5.293-6-9.735 0-3.309 2.691-6 6-6z"
+                ></path>
+                <path d="M11 14h2v-3h3V9h-3V6h-2v3H8v2h3z"></path>
+              </svg>
+              <p>Italian, based in Copenhagen</p></span
+            >
+            <span class="flex flex-row gap-3 h-fit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1)">
+                <path d="M2 7v1l11 4 9-4V7L11 4z"></path>
+                <path d="M4 11v4.267c0 1.621 4.001 3.893 9 3.734 4-.126 6.586-1.972 7-3.467.024-.089.037-.178.037-.268V11L13 14l-5-1.667v3.213l-1-.364V12l-3-1z"></path>
+              </svg>
+              <p>KEA - Københavns Erhvervsakademi</p>
+            </span>
+            <p class="sm:mr-3 lg:text-base">
+              My name is Alessia Amore, I moved to CPH in 2020 and I am currently studying <em>frontend design</em> during my elective semester of Multimedia Design at <b>KEA</b>. I am quick at learning and always eager to put my knowledge to use in
+              practical scenarios. Adaptable, organised and humble.
+            </p>
+          </article>
+        </article>
+        <h2 class="text-center text-3xl pt-10 pb-2 lg:mt-20">Skills</h2>
+        <article class="flex flex-col items-left p-5 pt-7 pb-0 gap-2 h-full sm:items-center lg:mx-56 lg:pb-12">
+          <p class="p-5 sm:px-20 lg:text-base">
+            Everyday, through my education at KEA, I am working and gaining experience with a multitude of tools ranging from graphic design programs, video editing to programming. <br />Some of my favourites are:
+          </p>
+          <ul class="p-5 ml-5 list-disc lg:text-base">
+            <li>HTML, CSS, Javascript, SASS</li>
+            <li>CSS frameworks (Bootstrap, Tailwind)</li>
+            <li>Npm, Vite & the terminal</li>
+            <li>Rest Api</li>
+            <li>React</li>
+            <li>Git and github</li>
+          </ul>
+        </article>
+      </article>
+    </section>
+    <section id="projects" class="border-y border-black border-solid h-fit py-10 lg:grid-cols-3 lg:grid lg:gap-10 lg:px-16 lg:justify-items-center lg:items-center">
+      <h2 class="text-center text-3xl pb-2 lg:col-span-3">Projects</h2>
+      <article class="portfolio_assignment flex flex-col items-left py-4 pt-12 lg:pt-4 gap-3 h-full">
+        <h3 class="px-2 text-lg">Portfolio assignment</h3>
+        <a href="https://amorea9.github.io/Portfolio/" target="_blank"><img class="sm:w-full sm:h-64" src="images/Screenshot 2022-10-24 at 17.19.09.png" alt="" /></a>
+      </article>
+      <article class="hogwarts_assignment flex flex-col items-left py-4 gap-2 h-full">
+        <h3 class="px-2 text-lg">Hogwarts hacked list</h3>
+        <a href="https://amorea9.github.io/HogwartsHackedList/" target="_blank"> <img class="sm:w-full sm:h-32" src="/PPW/images/Screenshot 2022-10-24 at 17.10.41.png" alt="" /></a>
+      </article>
+      <article class="assignment flex flex-col items-left py-4 gap-2 h-full">
+        <h3 class="px-2 text-lg">Coming soon...</h3>
+        <a href="index.html"><img class="sm:w-full sm:h-32" src="http://placekitten.com/g/600/100" alt="" /></a>
+      </article>
+    </section>
+
+    <footer id="footer_nav" class="p-5 h-full lg:pt-10">
+      <nav id="contact" class="flex flex-col items-center gap-16">
+        <ul id="footer_list" class="flex flex-col items-center gap-5 flex-wrap sm:flex-row md:justify-center md:gap-10 lg:py-2 text-center">
+          <li><a class="p-1 px-2" href="https://www.linkedin.com/in/amorea/" target="_blank">LinkedIn</a></li>
+          <li><a class="p-1 px-2" href="https://github.com/amorea9" target="_blank">Github</a></li>
+          <li><a class="p-1 px-2" href="">a.amore9393@gmail.com</a></li>
+        </ul>
+        <p class="text-sm text-center">
+          Copyright © 2022 Alessia Amore<br />
+          All Rights Reserved
+        </p>
+      </nav>
+    </footer>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
