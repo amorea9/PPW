@@ -35,7 +35,7 @@ section {
 }
 
 .logo {
-  background-image: url(/PPW/images/SVG/logo.svg);
+  background-image: url(images/logo.svg);
   height: 3rem;
   width: 4rem;
   background-repeat: no-repeat;
@@ -46,7 +46,7 @@ section {
 } */
 .about_image {
   position: relative;
-  background-image: url(/PPW/images/lineart_selfie.svg);
+  background-image: url(images/lineart_selfie.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--secondary-color);
@@ -65,7 +65,7 @@ section {
   transition: all 0.5s ease;
 } */
 .about_image_second {
-  background-image: url(/PPW/images/selfie.png);
+  background-image: url(images/selfie.png);
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 9999px;
