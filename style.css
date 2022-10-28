@@ -17,6 +17,7 @@ html {
 body {
   margin: 0;
   position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 #menu {
   position: sticky;
@@ -32,9 +33,59 @@ h3 {
 section {
   background-color: var(--secondary-color);
 }
+
+.logo {
+  background-image: url(/PPW/images/SVG/logo.svg);
+  height: 3rem;
+  width: 4rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 /* nav a:hover {
   background-color: var(--accent-color);
 } */
+.about_image {
+  position: relative;
+  background-image: url(/PPW/images/lineart_selfie.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-color);
+  border-radius: 9999px;
+  background-size: cover;
+  padding: 7rem;
+  height: 3rem;
+  width: 3rem;
+  align-self: center;
+  opacity: 1;
+  transition: all 0.8s ease;
+  filter: grayscale(1);
+}
+/* .about_image:hover {
+  opacity: 0;
+  transition: all 0.5s ease;
+} */
+.about_image_second {
+  background-image: url(/PPW/images/selfie.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 9999px;
+  background-size: cover;
+  top: 0;
+  right: 0;
+  padding: 7rem;
+  height: 3rem;
+  width: 3rem;
+  align-self: center;
+  transition: all 0.8s ease;
+  background-color: var(--primary-color);
+  opacity: 0;
+  position: absolute;
+}
+.about_image_second:hover {
+  opacity: 1;
+  transition: all 0.8s ease;
+}
+
 #menu nav a:after {
   content: "";
   background-color: var(--accent-color);
@@ -52,6 +103,7 @@ section {
 #menu nav a:hover::after {
   height: 100%;
 }
+
 a > img:hover {
   filter: grayscale(0);
   background-color: transparent;
@@ -114,6 +166,23 @@ h2:hover:after {
   width: 40%;
 }
 
+#mouth {
+  stroke: var(--primary-color);
+}
+#left_eye,
+#right_eye {
+  fill: var(--primary-color);
+}
+#face {
+  fill: var(--secondary-color);
+  stroke-width: 1px;
+  stroke: var(--primary-color);
+}
+#face:hover {
+  fill: #64efbc;
+  transition: all 1s;
+}
+
 @media screen and (min-width: 640px) {
   .portfolio_assignment img,
   .hogwarts_assignment img,
@@ -125,9 +194,11 @@ h2:hover:after {
   }
 }
 @media screen and (min-width: 1024px) {
-  #landing,
   #projects {
     height: 90vh;
+  }
+  #landing {
+    height: 100%;
   }
   #footer_nav {
     height: 30vh;
@@ -164,4 +235,20 @@ h2:hover:after {
   #projects > h2:hover:after {
     width: 100%;
   }
+}
+
+#smiley {
+  animation: smiley_tr 3000ms linear infinite normal;
+  height: 10rem;
+}
+@keyframes smiley_tr {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#menu nav #logo:hover:after {
+  content: none;
 }

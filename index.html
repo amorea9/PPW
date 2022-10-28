@@ -15,9 +15,9 @@
   </head>
   <body>
     <header id="menu">
-      <nav class="flex flex-row justify-between items-center m-4 border-black border border-solid p-2 lg:mx-56">
-        <div class="logo">AA</div>
-        <ul class="flex flex-row justify-between items-center mx-4 gap-3">
+      <nav class="flex flex-row justify-between items-center m-4 border-black border border-solid p-2 lg:mx-44">
+        <a id="logo" href="index.html"> <div class="logo"></div></a>
+        <ul class="flex flex-row justify-between items-center sm:mx-4 gap-3">
           <li><a class="p-2" href="#about">about</a></li>
           <li><a class="p-2" href="#projects">projects</a></li>
 
@@ -27,8 +27,25 @@
     </header>
 
     <div id="landing" class="h-fit">
-      <article class="flex flex-col sm:flex-row justify-around items-center p-5 py-20 h-full gap-5 xl:mx-56 lg:py-0">
-        <img src="http://placekitten.com/g/200/200" alt="placeholder" />
+      <article class="flex flex-col sm:flex-row justify-around items-center p-5 py-20 pt-10 h-full gap-5 xl:mx-56 lg:h-fit lg:justify-center lg:items-center lg:gap-32 lg:py-32">
+        <svg id="smiley" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+          <g id="smiley_tr" transform="translate(150,150) rotate(-0.042945)">
+            <g transform="scale(1.832125,1.832125) translate(-150.133247,-150.000007)">
+              <ellipse id="face" rx="74.746846" ry="74.746846" transform="translate(150.133242 150)" fill="#71f4c4" stroke-width="0" />
+              <ellipse id="right_eye" rx="6.262213" ry="6.262213" transform="matrix(.978409 0 0 1.978718 174.116184 128.308754)" stroke-width="0" />
+              <ellipse id="left_eye" rx="6.262213" ry="6.262213" transform="matrix(.973735 0 0 1.978717 126.150293 128.308759)" stroke-width="0" />
+              <path
+                id="mouth"
+                d="M113.759127,159.353349q1.598841,27.180671,18.919857,33.043169t36.240895-1.06591q17.587471-6.928385,17.587471-28.779535-.000001-7.359606-.000001,1.065907"
+                transform="matrix(.652368 0 0 0.778641 52.444741 44.047466)"
+                fill="none"
+                stroke="#000"
+                stroke-width="8"
+                stroke-linecap="round"
+              />
+            </g>
+          </g>
+        </svg>
         <div class="text-center sm:text-left">
           <h1 class="text-3xl font-bold p-5 py-10 text-left leading-10 text-center sm:text-left sm:pb-5 sm:text-4xl md:text-5xl lg:leading-base"><em>Hello,</em><br />I am Alessia!</h1>
           <p class="p-5 pt-0 text-center sm:text-left lg:text-base">A multimedia design student <br />with a strong interest in frontend design</p>
@@ -40,10 +57,13 @@
     <section id="about" class="border-t border-black border-solid h-fit py-10">
       <article>
         <h2 class="text-center text-3xl pb-2 lg:pt-16">About</h2>
-        <article id="about_article" class="flex flex-col sm:flex-row justify-around items-left p-5 gap-12 pt-10 lg:gap-44 h-full sm:items-center xl:mx-56 lg:pt-20">
-          <img class="sm:rounded-full sm:ml-20" src="http://placekitten.com/g/250/250" alt="placeholder" />
+        <article id="about_article" class="flex flex-col items-left p-5 pt-14 pb-0 gap-8 sm:gap-16 h-full sm:items-center lg:flex-row lg:mx-44 lg:pt-20 lg:gap-18">
+          <div class="about_image sm:rounded-full lg:p-36 lg:ml-24 xl:p-52">
+            <div class="about_image_second sm:rounded-full lg:p-36 xl:p-52"></div>
+          </div>
+
           <article class="flex flex-col p-5 sm:p-0 gap-6">
-            <span class="flex flex-row gap-3 h-fit">
+            <span class="flex flex-row gap-3 h-fit sm:px-20 lg:px-0">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1)">
                 <path
                   d="M11.42 21.815a1.004 1.004 0 0 0 1.16 0C12.884 21.598 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.996c-.029 6.444 7.116 11.602 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.004.021 4.438-4.388 8.423-6 9.731-1.611-1.308-6.021-5.293-6-9.735 0-3.309 2.691-6 6-6z"
@@ -52,14 +72,14 @@
               </svg>
               <p>Italian, based in Copenhagen</p></span
             >
-            <span class="flex flex-row gap-3 h-fit">
+            <span class="flex flex-row gap-3 h-fit sm:px-20 lg:px-0">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1)">
                 <path d="M2 7v1l11 4 9-4V7L11 4z"></path>
                 <path d="M4 11v4.267c0 1.621 4.001 3.893 9 3.734 4-.126 6.586-1.972 7-3.467.024-.089.037-.178.037-.268V11L13 14l-5-1.667v3.213l-1-.364V12l-3-1z"></path>
               </svg>
               <p>KEA - Københavns Erhvervsakademi</p>
             </span>
-            <p class="sm:mr-3 lg:text-base">
+            <p class="sm:mr-3 lg:text-base sm:px-20 lg:px-0">
               My name is Alessia Amore, I moved to CPH in 2020 and I am currently studying <em>frontend design</em> during my elective semester of Multimedia Design at <b>KEA</b>. I am quick at learning and always eager to put my knowledge to use in
               practical scenarios. Adaptable, organised and humble.
             </p>
@@ -75,6 +95,7 @@
             <li>CSS frameworks (Bootstrap, Tailwind)</li>
             <li>Npm, Vite & the terminal</li>
             <li>Rest Api</li>
+            <li>SASS</li>
             <li>React</li>
             <li>Git and github</li>
           </ul>
@@ -83,7 +104,7 @@
     </section>
     <section id="projects" class="border-y border-black border-solid h-fit py-10 lg:grid-cols-3 lg:grid lg:gap-10 lg:px-16 lg:justify-items-center lg:items-center">
       <h2 class="text-center text-3xl pb-2 lg:col-span-3">Projects</h2>
-      <article class="portfolio_assignment flex flex-col items-left py-4 pt-12 lg:pt-4 gap-3 h-full">
+      <article class="portfolio_assignment flex flex-col items-left py-4 pt-12 lg:pt-4 gap-2 h-full">
         <h3 class="px-2 text-lg">Portfolio assignment</h3>
         <a href="https://amorea9.github.io/Portfolio/" target="_blank"><img class="sm:w-full sm:h-64" src="images/Screenshot 2022-10-24 at 17.19.09.png" alt="" /></a>
       </article>
