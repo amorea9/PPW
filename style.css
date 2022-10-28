@@ -129,6 +129,7 @@ img {
   opacity: 60%;
   filter: grayscale(1);
   height: 20vh;
+  width: 100%;
 }
 a.cta {
   background-color: var(--accent-color);
