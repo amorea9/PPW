@@ -22,9 +22,11 @@ body {
 #menu {
   position: sticky;
   top: 1rem;
+  -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   z-index: 9999;
 }
+/*bg color with 50% opacity*/
 h1,
 h2,
 h3 {
