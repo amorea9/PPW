@@ -197,9 +197,9 @@ h2:hover:after {
   }
 }
 @media screen and (min-width: 1024px) {
-  #projects {
+  /* #projects {
     height: 90vh;
-  }
+  } */
   #landing {
     height: 100%;
   }
